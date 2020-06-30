@@ -30,12 +30,13 @@ import texttoimage
 
 texttoimage.convert('你好啊', font_name='MaShanZheng-Regular.ttf', font_size=100, color='green')
 ```
-Then I can get this png file:
-![](chinese.png)
+Then I got this png file.
+
 ## Examples
 
 ![](hello.png)
 ![](test.png)
+![](chinese.png)
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
