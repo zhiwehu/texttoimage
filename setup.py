@@ -18,6 +18,6 @@ setuptools.setup(
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
     ],
-    install_requires=['Pillow'],
+    install_requires=['Pillow', 'fonts', 'font-roboto'],
     python_requires='>=3.6',
 )

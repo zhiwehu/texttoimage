@@ -1,3 +1,4 @@
+from fonts.ttf import Roboto
 from PIL import Image, ImageFont, ImageDraw
 
 RGB_TO_COLOR_NAMES = {
@@ -148,10 +149,12 @@ COLOR_NAME_TO_RGB = dict(
     for rgb, names in RGB_TO_COLOR_NAMES.items()
     for name in names)
 
-def convert(text, font_size=48, color='black', image_file=None):
-    font = ImageFont.truetype('texttoimage/Roboto-Regular.ttf', font_size, encoding='utf-8')
+def convert(text, font_size=48, color='black', image_file=None, font_name=None):
+    if font_name == None:
+        font_name = Roboto
+    font = ImageFont.truetype(font_name, font_size, encoding='utf-8')
     w, h = font.getsize_multiline(text)
-    image = Image.new('RGBA', (w, h), (0, 0, 0, 0))
+    image = Image.new('RGBA', (w, int(h+h*0.1)), (0, 0, 0, 0))
     draw = ImageDraw.Draw(image)
     if color not in COLOR_NAME_TO_RGB.keys():
         color = 'black'
