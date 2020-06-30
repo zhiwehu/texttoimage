@@ -8,7 +8,7 @@ setuptools.setup(
     version="0.0.1",
     author="Jeffrey Hu",
     author_email="zhiwehu@gmail.com",
-    description="A package which can convert text to image.",
+    description="Texttoimage is a Python library for converting text to a transparent image.",
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/zhiwehu/texttoimage",
