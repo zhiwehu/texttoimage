@@ -149,7 +149,7 @@ COLOR_NAME_TO_RGB = dict(
     for name in names)
 
 def convert(text, font_size=48, color='black', image_file=None):
-    font = ImageFont.truetype('Microsoft YaHei Bold.ttf', font_size, encoding='utf-8')
+    font = ImageFont.truetype('texttoimage/MaShanZheng-Regular.ttf', font_size, encoding='utf-8')
     w, h = font.getsize_multiline(text)
     image = Image.new('RGBA', (w, h), (0, 0, 0, 0))
     draw = ImageDraw.Draw(image)
