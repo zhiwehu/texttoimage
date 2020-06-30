@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="texttoimage", # Replace with your own username
-    version="0.0.1",
+    version="0.0.2",
     author="Jeffrey Hu",
     author_email="zhiwehu@gmail.com",
     description="Texttoimage is a Python library for converting text to a transparent image.",
