@@ -32,11 +32,24 @@ texttoimage.convert('你好啊', font_name='MaShanZheng-Regular.ttf', font_size=
 ```
 Then I got this png file.
 
+Another Chinese with multiple lines:
+
+```python
+import texttoimage
+poem = '''登鹳雀楼
+唐代：王之涣
+
+白日依山尽，黄河入海流。
+欲穷千里目，更上一层楼。'''
+texttoimage.convert(poem, image_file='poem.png', font_name='MaShanZheng-Regular.ttf', font_size=100, color='brown')
+```
+
 ## Examples
 
 ![](hello.png)
 ![](test.png)
 ![](chinese.png)
+![](poem.png)
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
